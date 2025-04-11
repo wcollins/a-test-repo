@@ -1,0 +1,12 @@
+---
+repositories:
+    - name: a-test-repo
+      url: https://github.com/wcollins/a-test-repo.git
+      reference: main
+
+services:
+    - name: create-file
+      type: opentofu-plan
+      working-directory: ""
+      repository: a-test-repo
+...
